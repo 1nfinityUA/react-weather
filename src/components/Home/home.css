@@ -1,0 +1,11 @@
+.home {
+    margin: 0 auto;
+    display: flex;
+}
+.home__city-info {
+    font-size: 10px;
+}
+.home__weather {
+    font-size: 10px;
+    margin-left: 10px;
+}

@@ -1,0 +1,52 @@
+.header {
+    margin: 0 auto;
+    background-color: rgb(222, 234, 248);
+    height: 40px;
+    display: flex;
+    color: rgb(92, 75, 167);
+    background-color: rgb(222, 234, 248);
+    justify-content: space-between;
+    align-items: center;
+}
+.header-black {
+    margin: 0 auto;
+    background-color: rgb(92, 75, 167);
+    height: 40px;
+    display: flex;
+    color: rgb(222, 234, 248);
+    background-color: rgb(92, 75, 167);
+    justify-content: space-between;
+    align-items: center;
+}
+.header__title {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.header__title-black {
+    color: rgb(222, 234, 248);
+    cursor: pointer;
+    margin-left: 10px;
+}
+.header__switch-button{
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 10px;
+    color: rgb(92, 75, 167);
+    background-color: rgb(222, 234, 248);
+    border: 1px solid rgb(92, 75, 167);
+    border-radius: 3px;
+}
+.header__switch-button:hover {
+    color: rgb(222, 234, 248);
+    border: 1px solid rgb(222, 234, 248);
+    background-color: rgb(92, 75, 167);
+}
+.header__switch-swichers {
+    margin-right: 10px;
+    font-size: 10px;
+}
+.header__switch-swichers-black {
+    color: rgb(222, 234, 248);
+    margin-right: 10px;
+    font-size: 10px;
+}

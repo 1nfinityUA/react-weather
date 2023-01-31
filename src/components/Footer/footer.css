@@ -1,0 +1,28 @@
+.footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    color: rgb(92, 75, 167);
+    background-color: rgb(222, 234, 248);
+}
+.footer-black {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    color: rgb(222, 234, 248);
+    background-color: rgb(92, 75, 167);
+}
+.footer__prosto {
+    font-size: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.footer__author {
+    font-size: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}

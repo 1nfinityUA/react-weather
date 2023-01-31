@@ -1,0 +1,22 @@
+.page7 {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+}
+.page7__weather {
+    color: rgb(92, 75, 167);
+    border: 1px solid rgb(92, 75, 167);
+    border-radius: 5px;
+    margin: 5px;
+}
+.page7__Info {
+    font-size: 10px;
+    padding: 5px;
+}
+.page7__img {
+    margin: 0 auto;
+}
+.page7__img p {
+    padding: 5px;
+    font-size: 12px;
+}
