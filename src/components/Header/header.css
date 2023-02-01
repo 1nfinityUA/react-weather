@@ -50,3 +50,6 @@
     margin-right: 10px;
     font-size: 10px;
 }
+a {
+    cursor: pointer;
+}

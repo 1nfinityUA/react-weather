@@ -1,21 +1,22 @@
-.page14 {
+.card {
     display: flex;
     overflow: auto;
 }
-.page14__weather {
+.cadr__block {
     color: rgb(92, 75, 167);
     border: 1px solid rgb(92, 75, 167);
     border-radius: 5px;
     margin: 5px;
+    min-width: 110px;
 }
-.page14__Info {
-    font-size: 10px;
+.card__Info {
+    font-size: 7px;
     padding: 5px;
 }
-.page14__img {
+.card__img {
     margin: 0 auto;
 }
-.page14__img {
-    padding: 5px;
-    font-size: 12px;
+.card__img p {
+    padding: 0 5px;
+    font-size: 9px;
 }
