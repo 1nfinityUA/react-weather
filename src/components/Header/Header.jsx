@@ -15,7 +15,6 @@ const Header = () => {
     function change(value) {
         dispatch(setDays(value));
         dispatch(fetchWeather({ days, location }));
-        console.log(value)
     }
     function changeBlack() {
         return dispatch(setBlack(!black));
