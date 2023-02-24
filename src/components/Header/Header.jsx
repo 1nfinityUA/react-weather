@@ -1,7 +1,11 @@
 import React from "react";
 import "./header.css";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchWeather, setDays, setBlack } from "../../redux/slices/weatherSlice";
+import {
+    fetchWeather,
+    setDays,
+    setBlack,
+} from "../../redux/slices/weatherSlice";
 
 const Header = () => {
     const days = useSelector((state) => state.weatherSlice.days);
@@ -10,16 +14,23 @@ const Header = () => {
     const dispatch = useDispatch();
     function change(value) {
         dispatch(setDays(value));
-        dispatch(fetchWeather({days, location}));
+        dispatch(fetchWeather({ days, location }));
+        console.log(value)
     }
-    function changeBlack(){
-        return dispatch(setBlack(!black))
+    function changeBlack() {
+        return dispatch(setBlack(!black));
     }
     return (
         <div className={black ? "header-black" : "header"}>
-            <div >
-                <a onClick={() => change(1)}>
-                    <h3 className={black ? "header__title-black" : "header__title"}>Weather</h3>
+            <div>
+                <a href="#" onClick={() => change(1)}>
+                    <h3
+                        className={
+                            black ? "header__title-black" : "header__title"
+                        }
+                    >
+                        Weather
+                    </h3>
                 </a>
             </div>
             <div className="header__switch">
@@ -30,19 +41,34 @@ const Header = () => {
                     onClick={changeBlack}
                 />
                 <a
-                    className={black ? "header__switch-swichers-black" : "header__switch-swichers"}
+                    href="#"
+                    className={
+                        black
+                            ? "header__switch-swichers-black"
+                            : "header__switch-swichers"
+                    }
                     onClick={() => change(3)}
                 >
                     3 days
                 </a>
                 <a
-                    className={black ? "header__switch-swichers-black" : "header__switch-swichers"}
+                    href="#"
+                    className={
+                        black
+                            ? "header__switch-swichers-black"
+                            : "header__switch-swichers"
+                    }
                     onClick={() => change(7)}
                 >
                     7 days
                 </a>
                 <a
-                    className={black ? "header__switch-swichers-black" : "header__switch-swichers"}
+                    href="#"
+                    className={
+                        black
+                            ? "header__switch-swichers-black"
+                            : "header__switch-swichers"
+                    }
                     onClick={() => change(14)}
                 >
                     14 days
